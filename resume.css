@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 25px;
+}
+
+/* PAGE */
+.page {
+    max-width: 950px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 25px;
+}
+
+.header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid #2563eb;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    font-size: 34px;
+    color: #0f172a;
+}
+
+.header-text h3 {
+    color: #475569;
+}
+
+/* SECTIONS */
+.section {
+    margin-top: 30px;
+    padding: 28px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* COLORS */
+.profile { background: #e0f2fe; }
+.contact { background: #dcfce7; }
+.experience { background: #fff7ed; }
+.skills { background: #ede9fe; }
+.projects { background: #eef2ff; }
+.objective { background: #ecfeff; }
+
+.section h2 {
+    color: #1e3a8a;
+    margin-bottom: 12px;
+}
+
+.section h3 {
+    margin-top: 15px;
+    color: #0f172a;
+}
+
+.section p, .section li {
+    line-height: 1.8;
+    color: #1f2937;
+    font-size: 15px;
+}
+
+/* LISTS */
+ul {
+    margin-left: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #475569;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .page {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .page {
+        padding: 22px;
+    }
+
+    .header-text h1 {
+        font-size: 26px;
+    }
+
+    .section p,
+    .section li {
+        font-size: 14px;
+    }
+}
